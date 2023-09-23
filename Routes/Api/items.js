@@ -27,29 +27,6 @@ router.get('/', (req, res) => {
     }
   });
 
-  /*
-  //Create item
-  router.post('/', (req, res) => {
-    const newsItem = {
-        id: uuid.v4(),
-        name: req.body.name,
-        email: req.body.email,
-        quantity:req.body.quantity,
-        status: 'active'
-    }
-
-    if(!newsItem.name  || !newsItem.email) {
-        return res.status(400).json({msg: 'Please include a name and email'});
-    }
-
-    items.push(newsItem);
-    res.json(items);
-
-});
-
-*/
-
-// Create item
 router.post(
   '/',
   [
